@@ -1,0 +1,213 @@
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
+
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../toastStyles.css";
+
+import { Tilt } from "react-tilt";
+import { contactlinks } from "../constants";
+import { fadeIn } from "../utils/motion";
+
+const Contact = () => {
+  const formRef = useRef();
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const [errorShown, setErrorShown] = useState(false); // state variable for restricting one toast error message
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleToastClose = () => {
+    setErrorShown(false); // Reset errorShown state after error toast is closed
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      if (!errorShown) {
+        //checking if the error has not already been shown
+        toast.error("Please fill up all the fields.", {
+          className: "toast-error",
+          onClose: handleToastClose,
+        });
+        setErrorShown(true);
+      }
+      return;
+    }
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Akash",
+          from_email: form.email,
+          to_email: "akashm9923@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          setErrorShown(false); // Reset errorShown state
+
+          toast.success(
+            "Thank You for messaging me. I will get back to you as soon as possible :)",
+            {
+              className: "toast-success",
+            }
+          );
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          // console.log(error);
+
+          toast.error("Oops!! Something went wrong.", {
+            className: "toast-error",
+            onClose: handleToastClose,
+          });
+        }
+      );
+  };
+
+  const ContactCard = ({ index, title, icon, redirectLink }) => {
+    return (
+      <Tilt className="xs:w-[250px] w-full">
+        {/* Used an anchor tag for redirecting to different links*/}
+        <a href={redirectLink} target="_blank" rel="noopener noreferrer">
+          <motion.div
+            variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+            className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+          >
+            {/* creating the cards */}
+            <div
+              options={{
+                max: 45,
+                scale: 2,
+                speed: 450,
+              }}
+              className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[10px] flex justify-evenly items-center flex-col"
+            >
+              <img
+                src={icon}
+                alt={title}
+                className="w-16 h-16 object-contain"
+              />
+            </div>
+          </motion.div>
+        </a>
+      </Tilt>
+    );
+  };
+
+  return (
+    <>
+      <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        >
+          <p className={styles.sectionSubText}>Get in touch</p>
+          <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-12 flex flex-col gap-8"
+          >
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="What is Your Name?"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">
+                Your Email Address
+              </span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="What is Your Email Address?"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Message</span>
+              <textarea
+                rows="7"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Type your message here"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </form>
+        </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      </div>
+      <div>
+        {/* Creating the cards */}
+        <div className="mt-20 flex flex-wrap gap-10">
+          {contactlinks.map((contact, index) => (
+            <ContactCard key={contact.title} index={index} {...contact} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Contact, "contact");

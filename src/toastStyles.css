@@ -1,0 +1,16 @@
+/* Styling for success toast */
+
+.toast-success {
+  background: #93e69c;
+  color: #000903;
+  font-size: 16px;
+  position: bottom-center;
+}
+
+/* Styling for error toast */
+.toast-error {
+  background: #eda6a6;
+  color: #0c0101;
+  font-size: 16px;
+  position: bottom-center;
+}
