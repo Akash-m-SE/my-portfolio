@@ -238,7 +238,8 @@ const contactlinks = [
   {
     title: "Resume",
     icon: resume_logo,
-    redirectLink: null,
+    redirectLink:
+      "https://drive.google.com/file/d/1g3bbkTLbCtyDNcn33dPuPCKQns7S1XXU/view?usp=sharing",
   },
 ];
 
