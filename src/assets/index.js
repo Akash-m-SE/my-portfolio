@@ -37,8 +37,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import Sociopedia from "./Sociopedia.jpg";
-import dalleclone from "./dalleclone.jpg";
+import Snapwave from "./Snapwave.jpg";
 import Convergence from "./Convergence.jpg";
+import dalleclone from "./dalleclone.jpg";
 
 export {
   logo,
@@ -75,6 +76,7 @@ export {
   python,
   java,
   Sociopedia,
-  dalleclone,
+  Snapwave,
   Convergence,
+  dalleclone,
 };

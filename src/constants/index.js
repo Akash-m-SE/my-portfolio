@@ -30,8 +30,9 @@ import {
   python,
   java,
   Sociopedia,
-  dalleclone,
+  Snapwave,
   Convergence,
+  dalleclone,
 } from "../assets";
 
 export const navLinks = [
@@ -51,21 +52,22 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Software Engineer",
-    icon: web,
-  },
-  {
-    title: "ReactJs Developer",
-    icon: mobile,
-  },
-  {
     title: "Frontend Developer",
     icon: creator,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "React Developer",
+    icon: mobile,
   },
+  {
+    title: "Software Engineer",
+    icon: web,
+  },
+
+  // {
+  //   title: "Backend Developer",
+  //   icon: backend,
+  // },
 ];
 
 const technologies = [
@@ -136,10 +138,33 @@ const experiences = [];
 const testimonials = [];
 
 const projects = [
+  // {
+  //   name: "Sociopedia",
+  //   description:
+  //     "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
+
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: Sociopedia,
+  //   source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
+  //   project_link: "https://sociopediathesocialmedia.netlify.app/",
+  // },
   {
-    name: "Sociopedia",
+    name: "Snapwave",
     description:
-      "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
+      "Snapwave is a responsive image-sharing platform developed using React for the frontend, seamlessly integrated with Sanity CMS for robust backend support. The user interface prioritizes easy navigation, enabling offline image access through downloadable images. Implementation of Google OAuth 2.0 ensures a seamless and secure one-tap login experience, contributing to an elevated user retention rate. The project highlights proficiency in frontend development and a commitment to enhancing user experience through thoughtful design and functionality.",
 
     tags: [
       {
@@ -151,13 +176,17 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "tailwindcss",
+        color: "royal-blue-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "red-text-gradient",
       },
     ],
-    image: Sociopedia,
-    source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
-    project_link: "https://sociopediathesocialmedia.netlify.app/",
+    image: Snapwave,
+    source_code_link: "https://github.com/Akash-m-SE/Snapwave",
+    project_link: "https://snapwave-frontend.vercel.app/",
   },
   {
     name: "Convergence",
@@ -239,7 +268,7 @@ const contactlinks = [
     title: "Resume",
     icon: resume_logo,
     redirectLink:
-      "https://drive.google.com/file/d/1g3bbkTLbCtyDNcn33dPuPCKQns7S1XXU/view?usp=sharing",
+      "https://drive.google.com/file/d/1ceBvaFvFJi_x477_j9WX-7HxnZQzpobQ/view?usp=sharing",
   },
 ];
 

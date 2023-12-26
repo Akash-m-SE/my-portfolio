@@ -46,35 +46,33 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        <p>
-          I am a student who is completing Master's degree in Computer
-          Application. I possess a good knowledge of programming languages such
-          as Python, Java, and Javascript, and frameworks like React and
-          Node.js. One of my defining traits is my ability to learn quickly and
-          effectively. My true passion lies in crafting solutions that are not
-          only efficient and scalable but also user-friendly, providing
-          real-world solutions to everyday challenges.
+        <p className="text-justify">
+          I am an aspiring Frontend Developer with a recently acquired Master's
+          degree in Computer Application. I possess a good knowledge of
+          programming languages such as Python, Java and Javascript and
+          frameworks like React and Node.js. Known for my rapid learning
+          capabilities, I am committed to crafting efficient, scalable, and
+          user-friendly solutions that address real-world challenges.
         </p>
         <br />
-        <p>
-          Beyond the technical sphere, I am an ardent PC gamer. The virtual
-          worlds and competitive challenges within gaming captivate me, and I am
-          equally intrigued by the intricacies of hardware components and PC
-          building. For me, gaming isn't just a pastime—it's a platform for
-          embracing competition and solving complex problems. During my leisure
-          hours, you'll find me engrossed in gaming escapades or engaging in
-          rigorous workouts to maintain a well-rounded lifestyle. My firm belief
-          is that achieving balance means nurturing both mental resilience and
-          physical well-being.
+        <p className="text-justify">
+          Beyond coding, my passion extends to the world of PC gaming. The
+          strategic elements and competitive nature of gaming intrigues me,
+          paralleled by my fascination with hardware components and PC building.
+          Gaming for me is not just a leisure activity but a platform for
+          embracing competition and solving intricate problems. In my leisure
+          hours, I prioritize rigorous workouts to maintain a balanced
+          lifestyle, emphasizing the importance of both mental resilience and
+          physical well-being. I strongly advocate for personal growth,
+          believing in the development of mental strength and physical vitality.
         </p>
         <br />
-        <p>
-          I am a staunch advocate for personal growth, advocating for the
-          development of mental strength and physical vitality. I eagerly
-          anticipate the future, eager to tackle the challenges, absorb the
-          lessons, and seize the opportunities that come my way. I am prepared
-          to embrace the journey of continuous learning, personal growth, and
-          the excitement of facing new challenges.
+        <p className="text-justify">
+          As I look forward to the future, I am excited about the prospect of
+          tackling new challenges, absorbing valuable lessons, and seizing
+          opportunities for continuous learning and professional growth. Ready
+          to contribute my skills and enthusiasm to a dynamic team, I am eager
+          to embark on the journey of a professional Frontend Developer.
         </p>
       </motion.p>
 
