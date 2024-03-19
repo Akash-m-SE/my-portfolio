@@ -8,10 +8,13 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
+  mongoose,
+  prisma,
   git,
   figma,
   docker,
@@ -33,6 +36,8 @@ import {
   Snapwave,
   Convergence,
   dalleclone,
+  airbnbclone,
+  pixelyze,
 } from "../assets";
 
 export const navLinks = [
@@ -43,6 +48,10 @@ export const navLinks = [
   // {
   //   id: "work",
   //   title: "Work",
+  // },
+  // {
+  //   id: "works",
+  //   title: "Projects",
   // },
   {
     id: "contact",
@@ -56,18 +65,17 @@ const services = [
     icon: creator,
   },
   {
-    title: "React Developer",
+    title: "React\u002FNext.js Developer",
     icon: mobile,
   },
   {
-    title: "Software Engineer",
+    title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "Full Stack Developer",
     icon: web,
   },
-
-  // {
-  //   title: "Backend Developer",
-  //   icon: backend,
-  // },
 ];
 
 const technologies = [
@@ -83,18 +91,22 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -107,10 +119,18 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  // {
+  //   name: "Mongoose",
+  //   icon: mongoose,
+  // },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Prisma",
+    icon: prisma,
   },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
@@ -138,6 +158,81 @@ const experiences = [];
 const testimonials = [];
 
 const projects = [
+  {
+    name: "Airbnb Clone",
+    description:
+      "The Airbnb clone, developed using Next.js 13, incorporates technologies like Next.js app router, TypeScript for type-checking, Zustand for modal state management, and Prisma for database handling. Seamless authentication via NextAuth enables users to register/login via email/password or one-tap Google/GitHub login. Advanced search and filtering features enhance user experience by allowing property searches based on location, date range, and room count. Users can list properties with detailed information, gaining visibility into trip history, favorites, listings, and reservations.",
+
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "ocean-blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "royal-blue-text-gradient",
+      },
+      {
+        name: "nextauth",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "zustand",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+    ],
+
+    image: airbnbclone,
+    source_code_link: "https://github.com/Akash-m-SE/airbnb-clone",
+    project_link: "https://cloudhavenstays-airbnb-clone.vercel.app/",
+  },
+  {
+    name: "Pixelyze",
+    description:
+      "Pixelyze is an AI SaaS application developed with Next.js 14 and TypeScript, featuring authentication via Google/Github using Clerk. It optimizes MongoDB performance with Mongoose connection caching and ensures secure payments with Stripe integration. Cloudinary is utilized for efficient image storage and processing. The user-centric dashboard facilitates seamless management of creations and credits, fostering increased user engagement.",
+
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "ocean-blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "royal-blue-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "purplish-blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cloudinaryai",
+        color: "sky-blue-text-gradient",
+      },
+    ],
+    image: pixelyze,
+    source_code_link: "https://github.com/Akash-m-SE/Pixelyze",
+    project_link: "https://pixelyze.vercel.app/",
+  },
   // {
   //   name: "Sociopedia",
   //   description:
@@ -268,7 +363,7 @@ const contactlinks = [
     title: "Resume",
     icon: resume_logo,
     redirectLink:
-      "https://drive.google.com/file/d/1ceBvaFvFJi_x477_j9WX-7HxnZQzpobQ/view?usp=sharing",
+      "https://drive.google.com/file/d/1-7yuKQ6wqmULqmJR5OMkvybpCAYIuQiK/view?usp=sharing",
   },
 ];
 

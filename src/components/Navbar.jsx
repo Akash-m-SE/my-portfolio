@@ -68,6 +68,7 @@ const Navbar = () => {
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
+                  {/* <Link to={`${link.id}`}>{link.title}</Link> */}
                 </li>
               ))}
             </ul>

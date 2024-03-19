@@ -47,32 +47,26 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         <p className="text-justify">
-          I am an aspiring Frontend Developer with a recently acquired Master's
-          degree in Computer Application. I possess a good knowledge of
-          programming languages such as Python, Java and Javascript and
-          frameworks like React and Node.js. Known for my rapid learning
-          capabilities, I am committed to crafting efficient, scalable, and
-          user-friendly solutions that address real-world challenges.
+          As an aspiring Web Developer with a Master's degree in Computer
+          Application, I bring a strong foundation in JavaScript, TypeScript,
+          Python, and Java, along with expertise in frameworks like React and
+          Next.js. Committed to crafting efficient, scalable, and user-friendly
+          solutions, I thrive on tackling real-world challenges.
         </p>
         <br />
         <p className="text-justify">
-          Beyond coding, my passion extends to the world of PC gaming. The
-          strategic elements and competitive nature of gaming intrigues me,
-          paralleled by my fascination with hardware components and PC building.
-          Gaming for me is not just a leisure activity but a platform for
-          embracing competition and solving intricate problems. In my leisure
-          hours, I prioritize rigorous workouts to maintain a balanced
-          lifestyle, emphasizing the importance of both mental resilience and
-          physical well-being. I strongly advocate for personal growth,
-          believing in the development of mental strength and physical vitality.
+          Beyond coding, I'm passionate about PC gaming, drawn to its strategic
+          elements and competitive nature. I also enjoy exploring hardware
+          components and PC building. Additionally, I prioritize rigorous
+          workouts for mental resilience and physical well-being, emphasizing
+          personal growth.
         </p>
         <br />
         <p className="text-justify">
-          As I look forward to the future, I am excited about the prospect of
-          tackling new challenges, absorbing valuable lessons, and seizing
-          opportunities for continuous learning and professional growth. Ready
-          to contribute my skills and enthusiasm to a dynamic team, I am eager
-          to embark on the journey of a professional Frontend Developer.
+          Looking ahead, I'm excited about tackling new challenges, learning,
+          and contributing to a dynamic team. Eager to embark on the journey of
+          a professional Web Developer, I'm ready to bring my skills and
+          enthusiasm to the table.
         </p>
       </motion.p>
 

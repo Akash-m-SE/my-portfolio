@@ -18,8 +18,11 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
+import mongoose from "./tech/mongoose.png";
+import prisma from "./tech/prisma.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import nextjs from "./tech/nextjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -40,6 +43,8 @@ import Sociopedia from "./Sociopedia.jpg";
 import Snapwave from "./Snapwave.jpg";
 import Convergence from "./Convergence.jpg";
 import dalleclone from "./dalleclone.jpg";
+import airbnbclone from "./airbnbclone.jpg";
+import pixelyze from "./pixelyze.jpg";
 
 export {
   logo,
@@ -60,8 +65,11 @@ export {
   html,
   javascript,
   mongodb,
+  mongoose,
+  prisma,
   nodejs,
   reactjs,
+  nextjs,
   redux,
   tailwind,
   typescript,
@@ -79,4 +87,6 @@ export {
   Snapwave,
   Convergence,
   dalleclone,
+  airbnbclone,
+  pixelyze,
 };
