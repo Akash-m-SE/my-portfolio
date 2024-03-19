@@ -13,6 +13,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import MyLinks from "./components/MyLinks";
 
 const App = () => {
   return (
@@ -37,6 +38,8 @@ const App = () => {
 
         {/* Testimonials */}
         {/* <Feedbacks /> */}
+
+        <MyLinks />
 
         <div className="relative z-0">
           {/* Contact Me */}

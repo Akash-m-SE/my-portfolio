@@ -49,13 +49,17 @@ export const navLinks = [
   //   id: "work",
   //   title: "Work",
   // },
+  {
+    id: "works",
+    title: "Projects",
+  },
   // {
-  //   id: "works",
-  //   title: "Projects",
+  //   id: "contact",
+  //   title: "Contact",
   // },
   {
-    id: "contact",
-    title: "Contact",
+    id: "mylinks",
+    title: "Contact ",
   },
 ];
 

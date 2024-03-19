@@ -11,10 +11,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../toastStyles.css";
 
-import { Tilt } from "react-tilt";
-import { contactlinks } from "../constants";
-import { fadeIn } from "../utils/motion";
-
 const Contact = () => {
   const formRef = useRef();
 
@@ -74,7 +70,7 @@ const Contact = () => {
           setErrorShown(false); // Reset errorShown state
 
           toast.success(
-            "Thank You for messaging me. I will get back to you as soon as possible :)",
+            "Thank You for messaging me. I will get back to you asap! :)",
             {
               className: "toast-success",
             }
@@ -99,36 +95,6 @@ const Contact = () => {
       );
   };
 
-  const ContactCard = ({ index, title, icon, redirectLink }) => {
-    return (
-      <Tilt className="xs:w-[250px] w-full">
-        {/* Used an anchor tag for redirecting to different links*/}
-        <a href={redirectLink} target="_blank" rel="noopener noreferrer">
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-            className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-          >
-            {/* creating the cards */}
-            <div
-              options={{
-                max: 45,
-                scale: 2,
-                speed: 450,
-              }}
-              className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[10px] flex justify-evenly items-center flex-col"
-            >
-              <img
-                src={icon}
-                alt={title}
-                className="w-16 h-16 object-contain"
-              />
-            </div>
-          </motion.div>
-        </a>
-      </Tilt>
-    );
-  };
-
   return (
     <>
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -137,7 +103,7 @@ const Contact = () => {
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
           <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <h3 className={styles.sectionHeadText}>Send me a message 😃</h3>
 
           <form
             ref={formRef}
@@ -197,14 +163,6 @@ const Contact = () => {
         >
           <EarthCanvas />
         </motion.div>
-      </div>
-      <div>
-        {/* Creating the cards */}
-        <div className="mt-20 flex flex-wrap gap-10">
-          {contactlinks.map((contact, index) => (
-            <ContactCard key={contact.title} index={index} {...contact} />
-          ))}
-        </div>
       </div>
     </>
   );
