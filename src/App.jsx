@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,6 +32,7 @@ const App = () => {
         {/* <Experience /> */}
 
         {/* Technologies Known */}
+
         <Tech />
 
         {/* Projects */}
@@ -46,6 +48,7 @@ const App = () => {
           <Contact />
 
           {/* Floating Stars Canvas around the 3d Earth Model*/}
+
           <StarsCanvas />
         </div>
 

@@ -1,5 +1,5 @@
+import React from "react";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -16,11 +16,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Akash</span>
+            Hi, I&apos;m <span className="text-[#915eff]">Akash</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I am an aspiring web developer and software engineer who has
-            recently attained a Master's degree in Computer Application.
+            recently attained a Master &apos;s degree in Computer Application.
             {/* I develop &nbsp; */}
             {/* <br className="sm:block hidden" /> */}
             {/* web applications */}
