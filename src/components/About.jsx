@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, icon }) => {
       className="xs:w-[250px] w-full"
       options={{
         max: 45,
-        scale: 2,
+        scale: 1.2,
         speed: 450,
       }}
     >
@@ -42,7 +42,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}> Get to know me! 😁</h2>
       </motion.div>
 
-      <motion.p
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
@@ -68,7 +68,7 @@ const About = () => {
           journey of a professional Web Developer, I&apos;m ready to bring my
           skills and enthusiasm to the table.
         </p>
-      </motion.p>
+      </motion.div>
 
       {/* Creating the cards */}
       <div className="mt-20 flex flex-wrap gap-10">

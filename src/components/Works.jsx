@@ -17,40 +17,44 @@ const ProjectCard = ({
   source_code_link,
   project_link,
 }) => {
+  const handleProjectClick = () => {
+    if (!project_link) return;
+    window.open(project_link, "_blank", "noopener,noreferrer");
+  };
+
+  const handleGithubClick = (e) => {
+    e.stopPropagation(); // Prevents the click event from bubbling up to the parent div
+    window.open(source_code_link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <a href={project_link} target="_blank" rel="noopener noreferrer">
-          <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
-
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <a
-                href={source_code_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  // onClick={() => window.open(source_code_link, "_blank")}
-                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="w-1/2 h-1/2 object-contain"
-                  />
-                </div>
-              </a>
+        <div
+          onClick={handleProjectClick}
+          className="relative w-full h-[230px] cursor-pointer"
+        >
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div
+              onClick={handleGithubClick}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={github}
+                alt="github"
+                className="w-1/2 h-1/2 object-contain"
+              />
             </div>
           </div>
-        </a>
+        </div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>

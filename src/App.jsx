@@ -13,8 +13,8 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  MyLinks,
 } from "./components";
-import MyLinks from "./components/MyLinks";
 
 const App = () => {
   return (
@@ -32,7 +32,6 @@ const App = () => {
         {/* <Experience /> */}
 
         {/* Technologies Known */}
-
         <Tech />
 
         {/* Projects */}
@@ -41,6 +40,7 @@ const App = () => {
         {/* Testimonials */}
         {/* <Feedbacks /> */}
 
+        {/* My Links */}
         <MyLinks />
 
         <div className="relative z-0">
@@ -48,7 +48,6 @@ const App = () => {
           <Contact />
 
           {/* Floating Stars Canvas around the 3d Earth Model*/}
-
           <StarsCanvas />
         </div>
 

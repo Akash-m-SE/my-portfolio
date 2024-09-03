@@ -11,7 +11,6 @@ const MyLinks = () => {
   const ContactCard = ({ index, title, icon, redirectLink }) => {
     return (
       <Tilt className="xs:w-[250px] w-full">
-        {/* Used an anchor tag for redirecting to different links*/}
         <a href={redirectLink} target="_blank" rel="noopener noreferrer">
           <motion.div
             variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
@@ -43,10 +42,8 @@ const MyLinks = () => {
         <p className={styles.sectionSubText}> My Links </p>
         <h2 className={styles.sectionHeadText}> Contact Links. </h2>
       </motion.div>
-      {/* </div> */}
 
       {/* Creating the cards */}
-
       <div className="mt-20 flex flex-wrap gap-10">
         {contactlinks.map((contact, index) => (
           <ContactCard key={contact.title} index={index} {...contact} />
