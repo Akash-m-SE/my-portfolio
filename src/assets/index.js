@@ -40,12 +40,14 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import Sociopedia from "./Sociopedia.jpg";
+import ZapierClone from "./zapier.jpg";
+import VectorVerse from "./vectorverse.jpg";
+import AirbnbClone from "./airbnbclone.jpg";
+import Pixelyze from "./pixelyze.jpg";
 import Snapwave from "./Snapwave.jpg";
+import DalleClone from "./dalleclone.jpg";
 import Convergence from "./Convergence.jpg";
-import dalleclone from "./dalleclone.jpg";
-import airbnbclone from "./airbnbclone.jpg";
-import pixelyze from "./pixelyze.jpg";
+import Sociopedia from "./Sociopedia.jpg";
 
 export {
   logo,
@@ -85,10 +87,12 @@ export {
   python,
   java,
   aws,
-  Sociopedia,
+  ZapierClone,
+  VectorVerse,
+  AirbnbClone,
+  Pixelyze,
   Snapwave,
+  DalleClone,
   Convergence,
-  dalleclone,
-  airbnbclone,
-  pixelyze,
+  Sociopedia,
 };

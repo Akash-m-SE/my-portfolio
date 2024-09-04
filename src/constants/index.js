@@ -33,12 +33,14 @@ import {
   python,
   java,
   aws,
-  Sociopedia,
+  ZapierClone,
+  VectorVerse,
+  AirbnbClone,
+  Pixelyze,
   Snapwave,
+  DalleClone,
   Convergence,
-  dalleclone,
-  airbnbclone,
-  pixelyze,
+  Sociopedia,
 } from "../assets";
 
 export const navLinks = [
@@ -247,10 +249,119 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Zapier Clone",
+    description:
+      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
+    tags: [
+      {
+        name: "turborepo",
+        color: "coral-pink-text-gradient",
+      },
+      {
+        name: "microservices",
+        color: "sky-blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expressjs",
+        color: "white-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "ocean-blue-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "zustand",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reactflow",
+        color: "bright-pink-text-gradient",
+      },
+      {
+        name: "kafka",
+        color: "deep-red-text-gradient",
+      },
+    ],
+
+    image: ZapierClone,
+    source_code_link: "https://github.com/Akash-m-SE/zapier",
+    project_link: "https://zapier-frontend-eight.vercel.app/",
+  },
+  {
+    name: "Vector Verse",
+    description:
+      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "ocean-blue-text-gradient",
+      },
+      {
+        name: "nextauth",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "bullmq",
+        color: "white-text-gradient",
+      },
+      {
+        name: "vector-embeddings",
+        color: "lime-green-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Langchain",
+        color: "silver-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "sky-blue-text-gradient",
+      },
+      {
+        name: "LLM",
+        color: "yellow-text-gradient",
+      },
+    ],
+
+    image: VectorVerse,
+    source_code_link: "https://github.com/Akash-m-SE/vector-verse",
+    project_link: "https://vector-verse.vercel.app/",
+  },
+  {
     name: "Airbnb Clone",
     description:
-      "The Airbnb clone, developed using Next.js 13, incorporates technologies like Next.js app router, TypeScript for type-checking, Zustand for modal state management, and Prisma for database handling. Seamless authentication via NextAuth enables users to register/login via email/password or one-tap Google/GitHub login. Advanced search and filtering features enhance user experience by allowing property searches based on location, date range, and room count. Users can list properties with detailed information, gaining visibility into trip history, favorites, listings, and reservations.",
-
+      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
     tags: [
       {
         name: "nextjs",
@@ -269,24 +380,36 @@ const projects = [
         color: "purple-text-gradient",
       },
       {
-        name: "zustand",
-        color: "yellow-text-gradient",
-      },
-      {
         name: "prisma",
         color: "green-text-gradient",
       },
+      {
+        name: "zustand",
+        color: "yellow-text-gradient",
+      },
+
+      {
+        name: "cloudinary",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ci cd",
+        color: "azure-blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "sky-blue-text-gradient",
+      },
     ],
 
-    image: airbnbclone,
+    image: AirbnbClone,
     source_code_link: "https://github.com/Akash-m-SE/airbnb-clone",
     project_link: "https://cloudhavenstays-airbnb-clone.vercel.app/",
   },
   {
     name: "Pixelyze",
     description:
-      "Pixelyze is an AI SaaS application developed with Next.js 14 and TypeScript, featuring authentication via Google/Github using Clerk. It optimizes MongoDB performance with Mongoose connection caching and ensures secure payments with Stripe integration. Cloudinary is utilized for efficient image storage and processing. The user-centric dashboard facilitates seamless management of creations and credits, fostering increased user engagement.",
-
+      "Pixelyze is an AI SaaS application built with Next.js 14 and TypeScript, featuring Google/Github authentication via Clerk. It enhances MongoDB with Mongoose caching and secures payments through Stripe. Cloudinary handles efficient image storage and processing, while a user-friendly dashboard streamlines management of creations and credits.",
     tags: [
       {
         name: "nextjs",
@@ -317,7 +440,7 @@ const projects = [
         color: "sky-blue-text-gradient",
       },
     ],
-    image: pixelyze,
+    image: Pixelyze,
     source_code_link: "https://github.com/Akash-m-SE/Pixelyze",
     project_link: "https://pixelyze.vercel.app/",
   },
@@ -325,8 +448,7 @@ const projects = [
   {
     name: "Snapwave",
     description:
-      "Snapwave is a responsive image-sharing platform developed using React for the frontend, seamlessly integrated with Sanity CMS for robust backend support. The user interface prioritizes easy navigation, enabling offline image access through downloadable images. Implementation of Google OAuth 2.0 ensures a seamless and secure one-tap login experience, contributing to an elevated user retention rate. The project highlights proficiency in frontend development and a commitment to enhancing user experience through thoughtful design and functionality.",
-
+      "Snapwave is a responsive image-sharing platform developed using React and integrated with Sanity CMS for a powerful backend. The platform offers easy navigation and offline image access through downloads. It also implements Google OAuth 2.0 for secure, one-tap login, enhancing user retention. This project combines intuitive design with robust functionality to deliver a seamless user experience.",
     tags: [
       {
         name: "react",
@@ -335,6 +457,10 @@ const projects = [
       {
         name: "nodejs",
         color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
       },
       {
         name: "tailwindcss",
@@ -368,6 +494,10 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
         name: "webrtc",
         color: "purple-text-gradient",
       },
@@ -383,7 +513,7 @@ const projects = [
   {
     name: "DALL-E 2.0",
     description:
-      "DALL-E 2.0 is an image generator platform, leveraging the power of OpenAI's advanced AI image generation capabilities. Inspired by the groundbreaking DALL-E model, my project offers a creative platform for generating visually stunning and imaginative images. By integrating the OpenAI API, users can provide prompts and receive unique AI-generated images that match their descriptions. This project demonstrates my skills in API integration, and responsive design and highlights my ability to bring cutting-edge technologies to life, showcasing my passion for innovation and problem-solving in the field of web development.",
+      "DALL-E 2.0 is a platform that leverages OpenAI's advanced AI image generation capabilities, allowing users to input prompts and receive unique AI-generated images. By integrating the OpenAI API, the project enables users to create visually striking and imaginative images, demonstrating effective API integration and responsive design.",
 
     tags: [
       {
@@ -399,37 +529,45 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
         name: "openai",
         color: "ivory-white-text-gradient",
       },
     ],
-    image: dalleclone,
+    image: DalleClone,
     source_code_link: "https://github.com/Akash-m-SE/dall-e",
     project_link: "https://dalle2point0.netlify.app/",
   },
-  // {
-  //   name: "Sociopedia",
-  //   description:
-  //     "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
+  {
+    name: "Sociopedia",
+    description:
+      "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
 
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "nodejs",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: Sociopedia,
-  //   source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
-  //   project_link: "https://sociopediathesocialmedia.netlify.app/",
-  // },
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: Sociopedia,
+    source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
+    project_link: "https://sociopediathesocialmedia.netlify.app/",
+  },
 ];
 
 const contactlinks = [
