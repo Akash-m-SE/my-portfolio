@@ -19,8 +19,9 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-[#915eff]">Akash</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am an aspiring web developer and software engineer who has
-            recently attained a Master &apos;s degree in Computer Application.
+            I am a pasionate web developer with a Master&apos;s degree in
+            Computer Application, dedicated to building efficient and scalable
+            solutions.
           </p>
         </div>
       </div>

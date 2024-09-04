@@ -47,11 +47,14 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         <p className="text-justify">
-          As an aspiring Web Developer with a Master&apos;s degree in Computer
-          Application, I bring a strong foundation in JavaScript, TypeScript,
-          Python, and Java, along with expertise in frameworks like React and
-          Next.js. Committed to crafting efficient, scalable, and user-friendly
-          solutions, I thrive on tackling real-world challenges.
+          As a dedicated Web Developer with a Master&apos;s degree in Computer
+          Application, I specialize in full-stack development with a strong
+          command of JavaScript, TypeScript, Python, and Java. My expertise
+          spans building robust and scalable applications using modern
+          frameworks like Next.js, Reactjs, and Node.js, while seamlessly
+          integrating cloud solutions such as AWS, Docker, Kubernetes, and
+          Terraform. I also have experience with microservices architectures to
+          optimize performance and user experience.
         </p>
         <br />
         <p className="text-justify">
@@ -63,10 +66,11 @@ const About = () => {
         </p>
         <br />
         <p className="text-justify">
-          Looking ahead, I&apos;m excited about tackling new challenges,
-          learning, and contributing to a dynamic team. Eager to embark on the
-          journey of a professional Web Developer, I&apos;m ready to bring my
-          skills and enthusiasm to the table.
+          I&apos;m excited to continue pushing the boundaries of web
+          development, eager to take on new challenges, and contribute to
+          innovative projects within a dynamic team. My goal is to leverage my
+          skills and experience to create impactful and efficient digital
+          solutions.
         </p>
       </motion.div>
 

@@ -251,7 +251,7 @@ const projects = [
   {
     name: "Zapier Clone",
     description:
-      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
+      "Developed a microservices-based automation platform featuring a Next.js frontend and Node.js backend services. The project utilizes Turborepo for efficient monorepo management and Kafka for optimized task processing. Custom webhooks enable user-defined workflows, integrating actions like email automation, all designed to enhance scalability and functionality.",
     tags: [
       {
         name: "turborepo",
@@ -306,7 +306,7 @@ const projects = [
   {
     name: "Vector Verse",
     description:
-      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
+      "VectorVerse is an AI-driven web application built with Next.js and TypeScript, enabling users to upload and manage PDFs. It stores files in AWS S3, manages project data in PostgreSQL, and uses pgvector for embedding storage. The app processes PDFs using BullMQ and the universal-sentence-encoder, while the user dashboard supports project management and interactive PDF chatting powered by Langchain and Groq LLM. Docker and Docker Compose streamline the development environment for efficient setup and integration.",
     tags: [
       {
         name: "nextjs",
