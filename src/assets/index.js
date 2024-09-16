@@ -10,6 +10,7 @@ import close from "./close.svg";
 import linkedin from "./linkedin.png";
 import gmail from "./gmail.png";
 import resume_logo from "./resume_logo.png";
+import certificate_icon from "./certificate_icon.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -35,6 +36,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import freelance from "./company/freelance.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -45,6 +47,8 @@ import VectorVerse from "./vectorverse.jpg";
 import AirbnbClone from "./airbnbclone.jpg";
 import Pixelyze from "./pixelyze.jpg";
 import Snapwave from "./Snapwave.jpg";
+import Dashboard from "./dashboard.jpg";
+import Endurex from "./endurex.jpg";
 import DalleClone from "./dalleclone.jpg";
 import Convergence from "./Convergence.jpg";
 import Sociopedia from "./Sociopedia.jpg";
@@ -61,6 +65,7 @@ export {
   linkedin,
   gmail,
   resume_logo,
+  certificate_icon,
   css,
   docker,
   figma,
@@ -81,6 +86,7 @@ export {
   shopify,
   starbucks,
   tesla,
+  freelance,
   carrent,
   jobit,
   tripguide,
@@ -92,6 +98,8 @@ export {
   AirbnbClone,
   Pixelyze,
   Snapwave,
+  Dashboard,
+  Endurex,
   DalleClone,
   Convergence,
   Sociopedia,

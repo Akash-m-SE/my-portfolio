@@ -21,6 +21,7 @@ import {
   meta,
   starbucks,
   tesla,
+  freelance,
   shopify,
   carrent,
   jobit,
@@ -29,6 +30,7 @@ import {
   linkedin,
   gmail,
   resume_logo,
+  certificate_icon,
   threejs,
   python,
   java,
@@ -38,6 +40,8 @@ import {
   AirbnbClone,
   Pixelyze,
   Snapwave,
+  Dashboard,
+  Endurex,
   DalleClone,
   Convergence,
   Sociopedia,
@@ -48,10 +52,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  // {
-  //   id: "work",
-  //   title: "Work",
-  // },
+  {
+    id: "work",
+    title: "Work",
+  },
   {
     id: "works",
     title: "Projects",
@@ -68,20 +72,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Full Stack Developer",
+    icon: web,
+  },
+  {
+    title: "Next.js Developer",
     icon: creator,
   },
   {
-    title: "React\u002FNext.js Developer",
+    title: "Node.js Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Software Engineer",
     icon: backend,
-  },
-  {
-    title: "Full Stack Developer",
-    icon: web,
   },
 ];
 
@@ -166,56 +170,69 @@ const technologies = [
 ];
 
 const experiences = [
+  // {
+  //   title: "React.js Developer",
+  //   company_name: "Starbucks",
+  //   icon: starbucks,
+  //   iconBg: "#383E56",
+  //   date: "March 2020 - April 2021",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "React Native Developer",
+  //   company_name: "Tesla",
+  //   icon: tesla,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2021 - Feb 2022",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Freelance Projects",
+    company_name: "freelance",
+    icon: freelance,
+    iconBg: "#1b7a07",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed web applications using Next.js, Node.js and other related technologies.",
+      "Created a comprehensive dashboard for managing various functionalities and administrative tasks, thus improving user efficiency by 30%.",
+      "Refactored a codebase from React.js to Next.js, improving performance, and streamlining the development process by 20%.",
+      "Built a dynamic website for a gym, incorporating features like class scheduling, member profiles and others to enhance user engagement and streamline gym management.",
     ],
   },
 ];
@@ -251,7 +268,9 @@ const projects = [
   {
     name: "Zapier Clone",
     description:
-      "Developed a microservices-based automation platform featuring a Next.js frontend and Node.js backend services. The project utilizes Turborepo for efficient monorepo management and Kafka for optimized task processing. Custom webhooks enable user-defined workflows, integrating actions like email automation, all designed to enhance scalability and functionality.",
+      "Developed a microservices-based automation platform with a Next.js frontend and Node.js backend services. It uses Turborepo for monorepo management and Kafka for task processing, with custom webhooks for user-defined workflows and email automation.",
+    demo_link:
+      "https://hosted-documents-akash.s3.eu-central-1.amazonaws.com/Zapier+Clone+/Zapier+CLone+github+readme+files/Zapier+Clone+Demo.mp4",
     tags: [
       {
         name: "turborepo",
@@ -306,7 +325,7 @@ const projects = [
   {
     name: "Vector Verse",
     description:
-      "VectorVerse is an AI-driven web application built with Next.js and TypeScript, enabling users to upload and manage PDFs. It stores files in AWS S3, manages project data in PostgreSQL, and uses pgvector for embedding storage. The app processes PDFs using BullMQ and the universal-sentence-encoder, while the user dashboard supports project management and interactive PDF chatting powered by Langchain and Groq LLM. Docker and Docker Compose streamline the development environment for efficient setup and integration.",
+      "VectorVerse is an AI-powered app using Next.js and TypeScript that enables users to chat with PDFs. It utilizes AWS S3 for storage, PostgreSQL with pgvector for embeddings, and BullMQ for processing. Powered by Langchain and Groq LLM, the app offers interactive PDF chats and project management. Docker and Docker Compose are used for easy setup.",
     tags: [
       {
         name: "nextjs",
@@ -361,7 +380,7 @@ const projects = [
   {
     name: "Airbnb Clone",
     description:
-      "The Airbnb clone, built with Next.js 13, uses TypeScript, Zustand for state management, and Prisma for database operations. It features seamless NextAuth authentication via email, Google, or GitHub. Advanced search and filtering functionalities improves user experience, allowing property searches by location, dates, and rooms. Users can list properties and view trip history, favorites, and reservations.",
+      "The Airbnb clone is a property rental platform built with Next.js 13 and TypeScript. It features Zustand for state management, Prisma for the database, and NextAuth for authentication. Users can search, filter, list properties, and manage their trip history, favorites, and reservations.",
     tags: [
       {
         name: "nextjs",
@@ -409,7 +428,7 @@ const projects = [
   {
     name: "Pixelyze",
     description:
-      "Pixelyze is an AI SaaS application built with Next.js 14 and TypeScript, featuring Google/Github authentication via Clerk. It enhances MongoDB with Mongoose caching and secures payments through Stripe. Cloudinary handles efficient image storage and processing, while a user-friendly dashboard streamlines management of creations and credits.",
+      "Pixelyze is an AI SaaS app built with Next.js 14 and TypeScript. It integrates Google/Github authentication via Clerk, Mongoose caching, and secure payments through Stripe. Cloudinary handles image storage, processing, and AI-driven editing. The app features a dashboard for managing creations and credits.",
     tags: [
       {
         name: "nextjs",
@@ -444,11 +463,10 @@ const projects = [
     source_code_link: "https://github.com/Akash-m-SE/Pixelyze",
     project_link: "https://pixelyze.vercel.app/",
   },
-
   {
     name: "Snapwave",
     description:
-      "Snapwave is a responsive image-sharing platform developed using React and integrated with Sanity CMS for a powerful backend. The platform offers easy navigation and offline image access through downloads. It also implements Google OAuth 2.0 for secure, one-tap login, enhancing user retention. This project combines intuitive design with robust functionality to deliver a seamless user experience.",
+      "Snapwave is a responsive image-sharing platform built with React and powered by Sanity CMS. It features easy navigation, offline access through image downloads, and secure Google OAuth 2.0 for one-tap login, offering an intuitive and seamless user experience.",
     tags: [
       {
         name: "react",
@@ -476,39 +494,68 @@ const projects = [
     project_link: "https://snapwave-frontend.vercel.app/",
   },
   {
-    name: "Convergence",
+    name: "Dashboard",
     description:
-      "Convergence is a web-based platform that empowers users to communicate, collaborate, and connect effortlessly. With features like instant messaging, customizable rooms, screen sharing, camera interactions, and audio/video chat, Convergence redefines virtual communication. Whether for work or leisure, Convergence is your hub for seamless and engaging online interactions.",
-
+      "A customizable dashboard app built with React and Vite, featuring an ecommerce overview, employee, order, and customer management. It includes Syncfusion components like a calendar, Kanban board, editor, color picker, and supports various charts such as line, bar, and pie.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "vite",
+        color: "purple-text-gradient",
       },
       {
         name: "javascript",
         color: "yellow-text-gradient",
       },
       {
-        name: "webrtc",
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "royal-blue-text-gradient",
+      },
+      {
+        name: "syncfusion",
+        color: "light-yellow-text-gradient",
+      },
+    ],
+    image: Dashboard,
+    source_code_link: "https://github.com/Akash-m-SE/dashboard",
+    project_link: "https://dashboard-akash.vercel.app/",
+  },
+  {
+    name: "EndureX",
+    description:
+      "Endurex is a fitness app built with Vite and React, offering detailed exercise info, YouTube video suggestions, and recommendations for similar exercises by muscle groups and equipment, all powered by RapidAPI.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
         color: "purple-text-gradient",
       },
       {
-        name: "socketio",
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "rapidapi",
         color: "royal-blue-text-gradient",
       },
     ],
-    image: Convergence,
-    source_code_link: "https://github.com/Akash-m-SE/Convergence",
-    project_link: null,
+    image: Endurex,
+    source_code_link: "https://github.com/Akash-m-SE/endurex",
+    project_link: "https://endurex.vercel.app/",
   },
   {
     name: "DALL-E 2.0",
@@ -541,56 +588,94 @@ const projects = [
     source_code_link: "https://github.com/Akash-m-SE/dall-e",
     project_link: "https://dalle2point0.netlify.app/",
   },
-  {
-    name: "Sociopedia",
-    description:
-      "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
+  // {
+  //   name: "Convergence",
+  //   description:
+  //     "Convergence is a web-based platform that empowers users to communicate, collaborate, and connect effortlessly. With features like instant messaging, customizable rooms, screen sharing, camera interactions, and audio/video chat, Convergence redefines virtual communication. Whether for work or leisure, Convergence is your hub for seamless and engaging online interactions.",
 
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: Sociopedia,
-    source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
-    project_link: "https://sociopediathesocialmedia.netlify.app/",
-  },
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "yellow-text-gradient",
+  //     },
+  //     {
+  //       name: "webrtc",
+  //       color: "purple-text-gradient",
+  //     },
+  //     {
+  //       name: "socketio",
+  //       color: "royal-blue-text-gradient",
+  //     },
+  //   ],
+  //   image: Convergence,
+  //   source_code_link: "https://github.com/Akash-m-SE/Convergence",
+  //   project_link: null,
+  // },
+  // {
+  //   name: "Sociopedia",
+  //   description:
+  //     "Sociopedia is a vibrant and engaging social media platform designed to connect users through the power of visual content. Users can effortlessly share their favorite moments, experiences, and stories by uploading and showcasing their pictures. The platform encourages interaction and communication through likes, comments, and discussions on each other's images.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "yellow-text-gradient",
+  //     },
+  //   ],
+  //   image: Sociopedia,
+  //   source_code_link: "https://github.com/Akash-m-SE/Sociopedia",
+  //   project_link: "https://sociopediathesocialmedia.netlify.app/",
+  // },
 ];
 
 const contactlinks = [
   {
     title: "LinkedIn",
     icon: linkedin,
-    redirectLink: "https://www.linkedin.com/in/akash-maity2399/",
+    redirectLink: `${import.meta.env.VITE_APP_LINKEDIN_URL}`,
   },
   {
     title: "Github",
     icon: github,
-    redirectLink: "https://github.com/Akash-m-SE",
+    redirectLink: `${import.meta.env.VITE_APP_GITHUB_URL}`,
   },
   {
     title: "Gmail",
     icon: gmail,
-    redirectLink: "mailTo:akashm9923@gmail.com",
+    redirectLink: `mailTo:${import.meta.env.VITE_APP_GMAIL_ID}`,
   },
   {
     title: "Resume",
     icon: resume_logo,
-    redirectLink:
-      "https://drive.google.com/file/d/1-7yuKQ6wqmULqmJR5OMkvybpCAYIuQiK/view?usp=sharing",
+    redirectLink: `${import.meta.env.VITE_APP_RESUME_REDIRECT_LINK}`,
+  },
+  {
+    title: "Cohort-2.0-Certificate",
+    icon: certificate_icon,
+    redirectLink: `${import.meta.env.VITE_APP_COHORT_2_CERTIFICATE}`,
   },
 ];
 

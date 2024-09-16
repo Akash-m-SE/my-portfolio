@@ -29,7 +29,7 @@ const App = () => {
         <About />
 
         {/* Work Experience */}
-        {/* <Experience /> */}
+        <Experience />
 
         {/* Technologies Known */}
         <Tech />

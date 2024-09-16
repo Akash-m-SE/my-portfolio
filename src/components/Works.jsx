@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -16,6 +17,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   project_link,
+  demo_link,
 }) => {
   const handleProjectClick = () => {
     if (!project_link) return;
@@ -58,9 +60,18 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          {demo_link && (
+            <a
+              href={demo_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline mt-3 inline-block"
+            >
+              View Demo
+            </a>
+          )}
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
-
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>

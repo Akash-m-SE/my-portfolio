@@ -39,38 +39,29 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}> Introduction </p>
-        <h2 className={styles.sectionHeadText}> Get to know me! 😁</h2>
+        <h2 className={styles.sectionHeadText}> Get to know me! 🙂</h2>
       </motion.div>
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        <p className="text-justify">
-          As a dedicated Web Developer with a Master&apos;s degree in Computer
-          Application, I specialize in full-stack development with a strong
-          command of JavaScript, TypeScript, Python, and Java. My expertise
-          spans building robust and scalable applications using modern
-          frameworks like Next.js, Reactjs, and Node.js, while seamlessly
-          integrating cloud solutions such as AWS, Docker, Kubernetes, and
-          Terraform. I also have experience with microservices architectures to
-          optimize performance and user experience.
+        <p>
+          I&apos;m a Web Developer with a Master&apos;s in Computer Application,
+          specializing in full-stack development. I have strong expertise in
+          JavaScript, TypeScript, Python, and Java, with experience in building
+          scalable applications using frameworks like Next.js, React.js, and
+          Node.js. I have hands-on experience integrating cloud services like
+          AWS and Cloudinary, alongside DevOps tools such as Docker, Terraform,
+          and CI/CD pipelines, ensuring efficient deployment and continuous
+          integration workflows.
         </p>
         <br />
-        <p className="text-justify">
-          Beyond coding, I&apos;m passionate about PC gaming, drawn to its
-          strategic elements and competitive nature. I also enjoy exploring
-          hardware components and PC building. Additionally, I prioritize
-          rigorous workouts for mental resilience and physical well-being,
-          emphasizing personal growth.
-        </p>
-        <br />
-        <p className="text-justify">
-          I&apos;m excited to continue pushing the boundaries of web
-          development, eager to take on new challenges, and contribute to
-          innovative projects within a dynamic team. My goal is to leverage my
-          skills and experience to create impactful and efficient digital
-          solutions.
+        <p>
+          Outside of coding, I enjoy PC gaming, hardware exploration, and
+          staying active with rigorous workouts. I&apos;m passionate about
+          pushing the boundaries of web development and contributing to
+          innovative projects.
         </p>
       </motion.div>
 
