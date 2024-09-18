@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "format": "npx prettier . --write",
+    "format": "pnpm exec prettier . --write",
     "preview": "vite preview",
     "prepare": "husky"
   },

@@ -1,4 +1,4 @@
-npm run lint
-npm run format
+pnpm run lint
+pnpm run format
 git add .
-npm run build
+pnpm run build
