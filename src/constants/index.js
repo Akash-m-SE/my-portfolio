@@ -29,8 +29,9 @@ import {
   github,
   linkedin,
   gmail,
-  resume_logo,
-  certificate_icon,
+  resume,
+  certificate,
+  twitter,
   threejs,
   python,
   java,
@@ -76,11 +77,11 @@ const services = [
     icon: web,
   },
   {
-    title: "Next.js Developer",
+    title: "Next.js/Node.js Developer",
     icon: creator,
   },
   {
-    title: "Node.js Developer",
+    title: "DevOps",
     icon: mobile,
   },
   {
@@ -231,7 +232,7 @@ const experiences = [
     points: [
       "Developed web applications using Next.js, Node.js and other related technologies.",
       "Created a comprehensive dashboard for managing various functionalities and administrative tasks, thus improving user efficiency by 30%.",
-      "Refactored a codebase from React.js to Next.js, improving performance, and streamlining the development process by 20%.",
+      "Refactored codebase from React to Next.js, improving performance and streamlining the development process by 20%.",
       "Built a dynamic website for a gym, incorporating features like class scheduling, member profiles and others to enhance user engagement and streamline gym management.",
     ],
   },
@@ -668,13 +669,18 @@ const contactlinks = [
     redirectLink: `mailTo:${import.meta.env.VITE_APP_GMAIL_ID}`,
   },
   {
+    title: "Twitter (X)",
+    icon: twitter,
+    redirectLink: `${import.meta.env.VITE_APP_TWITTER_URL}`,
+  },
+  {
     title: "Resume",
-    icon: resume_logo,
+    icon: resume,
     redirectLink: `${import.meta.env.VITE_APP_RESUME_REDIRECT_LINK}`,
   },
   {
-    title: "Cohort-2.0-Certificate",
-    icon: certificate_icon,
+    title: "1-100 Full Stack Dev Certificate",
+    icon: certificate,
     redirectLink: `${import.meta.env.VITE_APP_COHORT_2_CERTIFICATE}`,
   },
 ];

@@ -60,8 +60,8 @@ const About = () => {
         <p>
           Outside of coding, I enjoy PC gaming, hardware exploration, and
           staying active with rigorous workouts. I&apos;m passionate about
-          pushing the boundaries of web development and contributing to
-          innovative projects.
+          pushing the boundaries of my skills and contributing to innovative
+          projects.
         </p>
       </motion.div>
 

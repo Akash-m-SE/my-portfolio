@@ -15,9 +15,15 @@ const ContactCard = ({ index, title, icon, redirectLink }) => {
           variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
           className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
         >
-          <div className="text-center p-0.5">{title}</div>
+          <div
+            className="text-center p-1.5 text-base font-serif"
+            id="card-title"
+          >
+            {title}
+          </div>
           {/* creating the cards */}
           <div
+            id="card-image-holder"
             options={{
               max: 45,
               scale: 2,
